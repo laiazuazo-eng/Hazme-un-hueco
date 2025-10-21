@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema VIP de Citas con Pandita 🐼</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>🍣 Sistema VIP de Citas con Pandita 🐼🍕</h1>
+        <p>¡Reserva tu cita oficial, o Pandita se come todo el sushi sin ti! 😜</p>
+        
+        <form id="formCita">
+            <input type="text" id="nombre" placeholder="Tu nombre (aka [Tu nombre])" required>
+            <select id="motivo" required>
+                <option value="" disabled selected>Elige tipo de cita</option>
+                <option value="peli y manta">Peli y manta</option>
+                <option value="peli y pizza">Peli y pizza</option>
+                <option value="cine">Cine</option>
+                <option value="ir de compras">Ir de compras</option>
+                <option value="fiesta loca">Fiesta loca</option>
+                <option value="hablar de la boda">Hablar de la boda</option>
+                <option value="comprar cosas de la boda">Comprar cosas de la boda</option>
+                <option value="planificar luna de miel">Planificar luna de miel</option>
+                <option value="ver una serie">Ver una serie</option>
+                <option value="salir a cenar">Salir a cenar</option>
+                <option value="ir al cine">Ir al cine</option>
+                <option value="salir de telde">Salir de Telde (porfi porfi)</option>
+            </select>
+            <input type="date" id="fecha" required>
+            <input type="time" id="hora" required>
+            <textarea id="notas" placeholder="Notas (ej: nada de Nicolas Cage si es una peli mala)"></textarea>
+            <button type="submit">¡Reservar Cita! 💜</button>
+        </form>
+        
+        <div id="confirmacion" style="display:none;">
+            <h2>🎉 ¡Cita Enviada, [Tu nombre]!</h2>
+            <p id="respuesta"></p>
+            <button onclick="volverForm()">Pedir otra cita 😍</button>
+        </div>
+        
+        <div id="listaCitas">
+            <h2>📅 Tus Citas con Pandita:</h2>
+            <ul id="citasList"></ul>
+        </div>
+        
+        <button id="emergencia">🚨 ¡Emergencia: Abrazo o Sushi YA! 🚨</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
