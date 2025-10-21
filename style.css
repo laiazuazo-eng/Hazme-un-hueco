@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #6a5acd, #87ceeb);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+.container {
+    max-width: 95%;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin: 10px auto;
+}
+h1 { color: #4b0082; font-size: 24px; }
+h2 { color: #6a5acd; }
+input, select, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #6a5acd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+textarea { min-height: 80px; }
+button {
+    background: #6a5acd;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover { background: #483d8b; }
+#emergencia {
+    background: #ff4500;
+    font-size: 18px;
+    margin-top: 20px;
+}
+ul { list-style: none; padding: 0; }
+li {
+    background: #e6e6fa;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #6a5acd;
+    text-align: left;
+}
+li.recordatorio { border-left: 5px solid #ff4500; font-weight: bold; }
+@media (max-width: 600px) {
+    body { padding: 5px; }
+    h1 { font-size: 20px; }
+}
